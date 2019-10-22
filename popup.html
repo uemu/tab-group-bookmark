@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="popup.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Tab Group Bookmark</title>
+</head>
+
+<body>
+    <div id="launcher" class="main">
+        <label for="keyword" >
+            Please input tab group name(#~) or command(/~).
+        </label>
+        <input type="text" id="keyword" class="keyword">
+        <div id="candidate-list" class="candidate-list">
+        </div>
+        <span id="settings-link" class="link">[ settings ]</span>
+    </div>
+    <div id="settings" class="main" hidden>
+        <label for="bookmark-data">
+            Bookmark data:
+        </label>
+        <textarea rows="25" id="bookmark-data" class="bookmark-data"></textarea>
+        <span id="back-link" class="link">[ &lt;&lt; back ]</span>
+    </div>
+    <script src="popup.js"> </script>
+</body>
+
+</html>
