@@ -34,6 +34,9 @@
                 onEscKey();
             }
         });
+
+        // disable autocomplete
+        input.name = Math.random().toString(36).slice(-8);
         input.focus();
     }
 
