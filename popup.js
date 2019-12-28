@@ -15,6 +15,7 @@
         setKeywordEventListeners();
         setSettingsLinkEventListeners();
         setBackLinkEventListeners();
+        setSaveLinkEventListeners();
     }
 
     function setKeywordEventListeners() {
@@ -57,8 +58,14 @@
         back.addEventListener('click', () => {
             document.getElementById('launcher').removeAttribute('hidden');
             document.getElementById('settings').setAttribute('hidden', '');
+        });
+    }
 
+    function setSaveLinkEventListeners() {
+        let save = document.getElementById('save-link');
+        save.addEventListener('click', () => {
             saveBookmarkRawData(document.getElementById('bookmark-data').value);
+            alert('Bookmark data saved');
         });
     }
 
